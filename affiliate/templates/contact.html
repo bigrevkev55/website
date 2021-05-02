@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Thomas Boxing Federation</title>
+      <meta charset ="UTF-8">
+      <!--Font link from fonts.google.com; must be in the <head> and on top of stylesheet -->
+      <!-- dafont.com has a lot of cool fonts as well -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'affiliate/css/Style.css' %} "">
+    </head>
+  <body>
+    <!--This is the main content -->
+        <nav>
+          <div class="wrapper">
+            <ul>
+             <li><a href="index.html">Home</a></li>
+              <li><a href="heavyweight.html">Heavweight Division</a></li>
+              <li><a href="middleweight.html">Middleweight Division</a></li>
+              <li><a href="rankings.html">TBF Champions and Rankings</a></li>
+              <li><a href="history.html">TBF History</a></li>
+              <li><a href="contact.html">Contact Information</a></li>
+      <!--        <li><a href="https://www.straightjabmedia.com/" target="_blank">Title Bout II</a> -->
+              <li><a href="https://www.straightjabmedia.com/" target="_blank"><img class="img-sjmlogo" src="{% static 'affiliate/images/sjmlogo.jpg' %} " alt ="boxing"></a></li>
+            </ul>
+          </div>
+        </nav>
+         <div class="wrapper">
+        <h3 class="page_heading">Contact Information</H3>
+         <section>
+           <h2  class="heading">Name</h2><p class="subpage_p"> Kevin Thomas
+           </p>
+           <img src="img/kevin.jpg" alt="boxing">
+         </section>
+         <section>
+          <h2  class="heading">Email Address</h2><p class="subpage_p"> bigrevkev55@yahoo.com
+          </p>
+        </section>
+        <h5 class="footer">Commissioners:  Zack and Kevin Thomas</h5>
+    </body>
+  </html>

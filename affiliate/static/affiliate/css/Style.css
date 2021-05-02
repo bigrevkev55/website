@@ -1,0 +1,291 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* Author:  Kevin Thomas
+     Date:  14-NOV-2020
+  Purpose:  Style sheet for TBF Website
+    Edits:
+*/
+
+@font-face {
+    /*must  include link to font and name we wnat to refer to*/
+    src: url(fonts/defused);
+    font-family: defused;
+}
+
+.page_heading {
+    color: White;
+    font-size: 70px;
+    font-family: 'Carter One', cursive;
+    margin: 15px;
+    background-color: #ED1109;
+    text-align: center;
+}
+
+.index_p {
+    color: rgb(252, 44, 3);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    text-indent: 30px;
+    line-height: 35px;
+}
+
+.subpage_p {
+    color: rgb(0.0.0);
+    font-size: 30px;
+    font-family: arial;
+    margin: 15px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+body {
+    background-color: #eee;
+}
+
+.wrapper {
+    margin: 0, auto, 0, 60px;
+    width: auto;
+}
+
+.img-sjmlogo {
+    width: auto;
+    height: auto;
+}
+
+nav {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+
+/*ul {} */
+
+ul li {
+    display: inline-flex;
+    float: left;
+    line-height: 100px;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial;
+    color: #1e1e1e;
+    padding: 0 20px;
+}
+
+figcaption {
+    font-size: 14;
+    font-style: italic;
+}
+
+.figcaption {
+    font-size: 14;
+    font-style: italic;
+}
+
+.pdf {
+    padding: 30px
+}
+
+li {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    color: #1e1e1e;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 50px;
+    margin: 15;
+}
+
+.footer {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    margin-top: 20px;
+}
