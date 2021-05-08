@@ -50,14 +50,42 @@ fieldset,
 form,
 label,
 legend,
-table,
+table {
+    border: 15px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 15px solid black;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    border: 15px solid black;
+    padding: 15px;
+}
+
 caption,
-tbody,
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
 tfoot,
-thead,
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: black;
+    font-size: 50;
+    border-spacing: 15;
+    text-align: left
+}
+
 tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -157,8 +185,11 @@ dfn[title] {
 }
 
 table {
+    display: table;
+    width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 15px;
+    border-color: rgb(12, 6, 6);
 }
 
 
@@ -223,8 +254,8 @@ body {
 }
 
 .wrapper {
-    margin: 0, auto, 0, 60px;
-    width: auto;
+    margin: 25%, 25%, 25%, 25%;
+    width: 50px
 }
 
 .img-sjmlogo {

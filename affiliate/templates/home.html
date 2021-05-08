@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
   <html>
-    <head>
+  <head>
       <title>Thomas Boxing Federation</title>
       <meta charset ="UTF-8">
       <!--Font link from fonts.google.com; must be in the <head> and on top of stylesheet -->
@@ -16,23 +16,24 @@
   <body>
     <!--This is the main content -->
         <nav>
-          <div class="wrapper">
+          <div class='wrapper'>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="home.html">Home</a></li>
               <li><a href="heavyweight.html">Heavweight Division</a></li>
               <li><a href="middleweight.html">Middleweight Division</a></li>
               <li><a href="rankings.html">TBF Champions and Rankings</a></li>
               <li><a href="history.html">TBF History</a></li>
-              <li><a href="{% static 'C:\website\website\affiliate\templates\contact.html' %}' ">Contact Information</a></li>
+              <li><a href="website/static/affiliate/templates/contact.html">Contact Information</a></li>
       <!--        <li><a href="https://www.straightjabmedia.com/" target="_blank">Title Bout II</a> -->
+              <li><a href="http://localhost:8000/admin">Admin</a></li> 
               <li><a href="https://www.straightjabmedia.com/" target="_blank"><img class="img-sjmlogo" src="{% static 'affiliate/images/sjmlogo.jpg' %} " alt ="boxing"></a></li>
             </ul>
           </div>
         </nav>
-         <div class="wrapper">
-          <h3 class="page_heading">Thomas Boxing Federation</H3>
+         <div class='wrapper'>
+          <h3 class='page_heading'>Thomas Boxing Federation</H3>
             <section>
-             <h2  class="heading">About</h2>
+             <h2  class='heading'>About</h2>
              <p class="index_p"> The Thomas Boxing Federation (TBF) is a fictional
                  boxing federation consisting of two weight divisions. The
                  Heavweight Division is the top level of the TBF, while
@@ -41,7 +42,27 @@
                  the game Title Bout II (link in menu) to play out its matches and tournaments.
              </p>
             </section>
+         <div class="wrapper">
+         <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="th">Last Name</th>
+                <th>First Name</th>
+                <th>Nickname</th>
+              </tr>
+            </thdead>
+             <tbody> 
+               <h2>Boxers</h2> 
+                {% for boxer in boxer %} 
+                  <tr> 
+                    <td class="td">{{boxer.last_name}}</td>
+                    <td>{{boxer.first_name}}</td>
+                    <td>{{boxer.nick_name}}</td>
+                  </tr>   			
+                {% endfor %}
+             </tbody>
           </div>
+          </table>
           <h5 class="footer">Commissioners:  Zack and Kevin Thomas</h5>
    </body>
   </html>
