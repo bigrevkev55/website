@@ -151,7 +151,7 @@ a {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    vertical-align: baseline;
+    vertical-align: super;
     background: transparent;
 }
 
@@ -254,8 +254,8 @@ body {
 }
 
 .wrapper {
-    margin: 25%, 25%, 25%, 25%;
-    width: 50px
+    
+    width: 100%
 }
 
 .img-sjmlogo {
@@ -303,11 +303,7 @@ figcaption {
 }
 
 li {
-    display: block;
-    font-size: 18px;
-    font-family: arial;
-    color: #1e1e1e;
-    padding: 0 20px;
+    display: list-item
 }
 
 .heading {
