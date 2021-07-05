@@ -30,8 +30,7 @@
             </ul>
           </div>
         </nav>
-    <main>
-         <div class='wrapper'>
+    <main class=wrapper>
           <h3 class='page_heading'>Thomas Boxing Federation</H3>
             <section>
              <h2  class='heading'>About</h2>
@@ -43,14 +42,14 @@
                  the game Title Bout II (link in menu) to play out its matches and tournaments.
              </p>
             </section>
-         <table class="table table-bordered">
+         <table>
             <thead>
               <tr>
                 <th class="th">Last Name</th>
                 <th>First Name</th>
                 <th>Nickname</th>
               </tr>
-            </thdead>
+            </thead>
              <tbody> 
                <h2>Boxers</h2> 
                 {% for boxer in boxer %} 
@@ -61,7 +60,6 @@
                   </tr>   			
                 {% endfor %}
              </tbody>
-          </div>
           </table>
     </main>
           <h5 class="footer">Commissioners:  Zack and Kevin Thomas</h5>
