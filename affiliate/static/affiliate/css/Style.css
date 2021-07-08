@@ -6,104 +6,181 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table {
+    width: 90%;
+    margin: auto;
+}
+
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+article,
+aside,
+details,
+footer,
+header,
+hgroup,
+menu,
+section {
+    display: block;
 }
 
-nav ul {
-    list-style:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
+
 /* change colours to suit your needs */
+
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
+
 /* change colours to suit your needs */
+
 mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    margin: auto;
+    font-size: medium;
 }
+
 
 /* change border colour to suit your needs */
+
 hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
-} 
+input,
+select {
+    vertical-align: middle;
+}
+
 
 /* Author:  Kevin Thomas
      Date:  14-NOV-2020
-  Purpose:  Style sheet for TBF Website
+  Purpose:  Style sheet for TBF Website 2
     Edits:
 */
 
@@ -115,9 +192,11 @@ input, select {
 
 .page_heading {
     color: White;
-    font-size: 70px;
+    font-size: xx-large;
     font-family: 'Carter One', cursive;
-    margin: 15px;
+    width: 95%;
+    height: auto;
+    margin: auto;
     background-color: #ED1109;
     text-align: center;
 }
@@ -141,18 +220,18 @@ input, select {
 }
 
 body {
-    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
-    background: url(/images/wallpaper.png) repeat; 
-    color: #000000;     
-    text-align:center; 
+    font: 62.5%/1.5 "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    background: url(/images/wallpaper.png) repeat;
+    color: #000000;
+    text-align: center;
 }
 
 .wrapper {
-    width:980px;  
-    text-align:left;   
-    margin-left:auto;  
-    margin-right:auto;  
-    background-color: #FFFFFF; 
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
 }
 
 .img-sjmlogo {
@@ -160,52 +239,20 @@ body {
     height: auto;
 }
 
-nav {
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-}
-
-
-/*ul {} */
-
-ul li {
-    display: inline-flex;
-    float: left;
-    line-height: 100px;
-}
-
-ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: arial;
-    color: #1e1e1e;
-    padding: 0 20px;
-}
-
 figcaption {
     font-size: 14;
     font-style: italic;
-}
-
-.figcaption {
-    font-size: 14;
-    font-style: italic;
+    color: white;
 }
 
 .pdf {
     padding: 30px
 }
 
-li {
-    display: list-item
-}
-
 .heading {
-    font-size: 50px;
-    margin: 15;
+    font-size: xx-large;
+    width: 80%;
+    margin: auto;
 }
 
 .footer {

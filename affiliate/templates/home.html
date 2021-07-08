@@ -11,38 +11,75 @@
       <link href="https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&display=swap" rel="stylesheet">
+      
+      <!--Style Sheet Pathway-->
       <link rel="stylesheet" href={% static 'affiliate/css/Style.css' %}>
+
+      <style>
+          table {
+            width:75%;
+            margin:auto;
+          }
+          
+          th, tr {
+            width: 60px;
+            height: 50px;
+          }
+          
+          th {
+            background-color:blue;
+            color: white;
+          }
+
+          tr:nth-of-type(odd) {
+            background-color: LightGray;
+          }
+          
+          tr:nth-of-type(even){
+            background-color: DarkGray;
+          }
+
+          ul li {
+            list-style-type:none;
+            text-decoration:none;
+          }
+
+          li a {
+            color:white;
+            list-style-type:none;
+            text-decoration:none;
+            font-size: 20px;
+          }
+
+          li a:visited {
+            color:white
+          }
+          
+	  </style>
     </head>
-  <body>
+  <body class='wrapper'>
     <!--This is the main content -->
-        <nav>
-          <div class='wrapper'>
+        <nav style="float:left; background-color:blue;">
             <ul>
               <li><a href="home.html">Home</a></li>
               <li><a href="heavyweight.html">Heavweight Division</a></li>
               <li><a href="middleweight.html">Middleweight Division</a></li>
               <li><a href="rankings.html">TBF Champions and Rankings</a></li>
               <li><a href="history.html">TBF History</a></li>
-              <li><a href="website/static/affiliate/templates/contact.html">Contact Information</a></li>
-      <!--        <li><a href="https://www.straightjabmedia.com/" target="_blank">Title Bout II</a> -->
-              <li><a href="https://thomasboxing2.herokuapp.com/admin/">Admin</a></li> 
-              <li><a href="https://www.straightjabmedia.com/" target="_blank"><img class="img-sjmlogo" src="{% static 'affiliate/images/sjmlogo.jpg' %} " alt ="boxing"></a></li>
+              <li><a href="contact.html" target="_blank">Contact Information</a></li>
+              <li><a href="https://www.straightjabmedia.com/" target="_blank">Title Bout II</a>
+              <li><a href="https://thomasboxing2.herokuapp.com/admin/" target="_blank">Admin</a></li> 
+              <figure>
+                <a href="https://www.straightjabmedia.com/" target="_blank"><img class="img-sjmlogo" src="{% static 'affiliate/images/sjmlogo.jpg' %} " alt ="boxing"></a>
+                <figcaption>Click to Visit TBII Website</figcaption>
+              </figure>
             </ul>
-          </div>
         </nav>
     <main class=wrapper>
-          <h3 class='page_heading'>Thomas Boxing Federation</H3>
-            <section>
-             <h2  class='heading'>About</h2>
-             <p class="index_p"> The Thomas Boxing Federation (TBF) is a fictional
-                 boxing federation consisting of two weight divisions. The
-                 Heavweight Division is the top level of the TBF, while
-                  the Middleweight Division contains several of the
-                  most beloved fighters in boxing history.  The TBF uses
-                 the game Title Bout II (link in menu) to play out its matches and tournaments.
-             </p>
-            </section>
+          <h5 class='page_heading'>Thomas Boxing Federation</h5>
+          <h3  class='heading'>About</h3>
          <table>
+            <caption><h2><strong>TBF Boxers<strong></h2></caption>
             <thead>
               <tr>
                 <th class="th">Last Name</th>
@@ -51,7 +88,6 @@
               </tr>
             </thead>
              <tbody> 
-               <h2>Boxers</h2> 
                 {% for boxer in boxer %} 
                   <tr> 
                     <td class="td">{{boxer.last_name}}</td>
@@ -61,6 +97,16 @@
                 {% endfor %}
              </tbody>
           </table>
+
+            <section>
+             <p class="index_p"> The Thomas Boxing Federation (TBF) is a fictional
+                 boxing federation consisting of two weight divisions. The
+                 Heavweight Division is the top level of the TBF, while
+                  the Middleweight Division contains several of the
+                  most beloved fighters in boxing history.  The TBF uses
+                 the game Title Bout II (link in menu) to play out its matches and tournaments.
+             </p>
+            </section>
     </main>
           <h5 class="footer">Commissioners:  Zack and Kevin Thomas</h5>
    </body>
