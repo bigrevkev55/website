@@ -192,11 +192,8 @@ select {
 
 .page_heading {
     color: White;
-    font-size: large;
+    font-size: xx-large;
     font-family: 'Carter One', cursive;
-    width: 100%;
-    height: auto;
-    margin: auto;
     background-color: #ED1109;
     text-align: center;
 }
