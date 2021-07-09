@@ -5,6 +5,7 @@
   <head>
       <title>Thomas Boxing Federation</title>
       <meta charset ="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--Font link from fonts.google.com; must be in the <head> and on top of stylesheet -->
       <!-- dafont.com has a lot of cool fonts as well -->
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +18,7 @@
 
       <style>
           table {
-            width:75%;
+            width:95%;
             margin:auto;
           }
           
@@ -54,12 +55,14 @@
           li a:visited {
             color:white
           }
-          
+
 	  </style>
     </head>
   <body class='wrapper'>
     <!--This is the main content -->
-        <nav style="float:left; background-color:blue;">
+
+        <span><h5 class='page_heading'>Thomas Boxing Federation</h5></span>
+        <nav style="float:left; background-color:blue; width:95%;">
             <ul>
               <li><a href="home.html">Home</a></li>
               <li><a href="heavyweight.html">Heavweight Division</a></li>
@@ -67,7 +70,7 @@
               <li><a href="rankings.html">TBF Champions and Rankings</a></li>
               <li><a href="history.html">TBF History</a></li>
               <li><a href="contact.html" target="_blank">Contact Information</a></li>
-              <li><a href="https://www.straightjabmedia.com/" target="_blank">Title Bout II</a>
+              <li><a href="https://www.straightjabmedia.com/">Title Bout II</a>
               <li><a href="https://thomasboxing2.herokuapp.com/admin/" target="_blank">Admin</a></li> 
               <figure>
                 <a href="https://www.straightjabmedia.com/" target="_blank"><img class="img-sjmlogo" src="{% static 'affiliate/images/sjmlogo.jpg' %} " alt ="boxing"></a>
@@ -76,7 +79,6 @@
             </ul>
         </nav>
     <main class=wrapper>
-          <h5 class='page_heading'>Thomas Boxing Federation</h5>
           <h3  class='heading'>About</h3>
          <table>
             <caption><h2><strong>TBF Boxers<strong></h2></caption>
